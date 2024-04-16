@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group = 'ru.mrflaxe.commons'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+
+    maven {
+        name = 'Paper'
+        url = 'https://repo.papermc.io/repository/maven-public/'
+    }
+}
+
+dependencies {
+    compileOnly 'com.destroystokyo.paper:paper-api:1.16.5-R0.1-SNAPSHOT'
+}
